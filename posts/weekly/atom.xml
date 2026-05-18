@@ -2,11 +2,524 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://packit.dev/posts/weekly</id>
     <title>Packit Weekly</title>
-    <updated>2025-05-26T00:00:00.000Z</updated>
+    <updated>2026-05-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://packit.dev/posts/weekly"/>
     <subtitle>Weekly updates by Packit</subtitle>
     <icon>https://packit.dev/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[Week 18 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-18</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-18"/>
+        <updated>2026-05-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 18 (April 29th – May 5th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-18-april-29th--may-5th">Week 18 (April 29th – May 5th)<a href="#week-18-april-29th--may-5th" class="hash-link" aria-label="Direct link to Week 18 (April 29th – May 5th)" title="Direct link to Week 18 (April 29th – May 5th)">​</a></h2><ul><li>The <code>/packit test</code> command now supports testing with builds from multiple pull requests. You can specify multiple PRs using the format <code>/packit test namespace/repo#123 namespace/repo#456</code> or GitHub URLs, allowing you to combine artifacts from several PRs in a single test run. (<a href="https://github.com/packit/packit-service/pull/3118" target="_blank" rel="noopener noreferrer">packit-service#3118</a>)</li></ul>]]></content>
+        <author>
+            <name>Maja Massarini</name>
+            <email>mmassari@redhat.com</email>
+            <uri>https://github.com/majamassarini</uri>
+        </author>
+        <category label="2026-April" term="2026-April"/>
+        <category label="2026" term="2026"/>
+        <category label="April" term="April"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 17 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-17</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-17"/>
+        <updated>2026-04-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 17 (April 21st – April 27th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-17-april-21st--april-27th">Week 17 (April 21st – April 27th)<a href="#week-17-april-21st--april-27th" class="hash-link" aria-label="Direct link to Week 17 (April 21st – April 27th)" title="Direct link to Week 17 (April 21st – April 27th)">​</a></h2><ul><li>We have fixed several cases of excessive job cancellation, in particular when retriggering
+a job using the Re-run button on GitHub and when using commands such as <code>rebuild-failed</code>,
+<code>retest-failed</code> or <code>test</code> with <code>--identifier</code>.
+(<a href="https://github.com/packit/packit-service/pull/3112" target="_blank" rel="noopener noreferrer">packit-service#3112</a>)</li></ul>]]></content>
+        <author>
+            <name>Nikola Forró</name>
+            <email>nforro@redhat.com</email>
+            <uri>https://github.com/nforro</uri>
+        </author>
+        <category label="2026-April" term="2026-April"/>
+        <category label="2026" term="2026"/>
+        <category label="April" term="April"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 16 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-16</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-16"/>
+        <updated>2026-04-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 16 (April 14th – April 20th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-16-april-14th--april-20th">Week 16 (April 14th – April 20th)<a href="#week-16-april-14th--april-20th" class="hash-link" aria-label="Direct link to Week 16 (April 14th – April 20th)" title="Direct link to Week 16 (April 14th – April 20th)">​</a></h2><ul><li>We have finalized support for multiple release streams, you can read more about it
+in a <a href="/posts/multiple-release-streams">dedicated blog post</a>.</li></ul>]]></content>
+        <author>
+            <name>Nikola Forró</name>
+            <email>nforro@redhat.com</email>
+            <uri>https://github.com/nforro</uri>
+        </author>
+        <category label="2026-April" term="2026-April"/>
+        <category label="2026" term="2026"/>
+        <category label="April" term="April"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 15 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-15</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-15"/>
+        <updated>2026-04-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 15 (April 7th – April 13th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-15-april-7th--april-13th">Week 15 (April 7th – April 13th)<a href="#week-15-april-7th--april-13th" class="hash-link" aria-label="Direct link to Week 15 (April 7th – April 13th)" title="Direct link to Week 15 (April 7th – April 13th)">​</a></h2><ul><li>In addition to <code>version_update_mask</code>, users can now use a new <code>version_update_specifiers</code> configuration option to control the upstream versions allowed to be release-synced. The option accepts <a href="https://packaging.pypa.io/en/stable/specifiers.html" target="_blank" rel="noopener noreferrer">PEP440 version specifier sets</a>, for example <code>version_update_specifiers: &gt;=1.0,~=1.0</code>. (<a href="https://github.com/packit/packit/pull/2710" target="_blank" rel="noopener noreferrer">packit#2710</a>)</li><li>Packit is now able to handle multi-level project namespaces. (<a href="https://github.com/packit/packit-service/pull/3092" target="_blank" rel="noopener noreferrer">packit-service#3092</a>)</li><li>We have fixed a bug in relation to retriggering of Copr builds sometimes failing due to a failed cancellation of previous builds. (<a href="https://github.com/packit/packit-service/pull/3099" target="_blank" rel="noopener noreferrer">packit-service#3099</a>)</li><li>We have fixed tag filtering not working when processing multi-release events and when retriggering pull-from-upstream. (<a href="https://github.com/packit/packit-service/pull/3098" target="_blank" rel="noopener noreferrer">packit-service#3098</a>)</li><li>As part of the process of the integration of Log Detective into Packit, Packit now ignores Log Detective messages in case Log Detective integration is disabled by the user by setting <code>logdetective_enabled</code> to <code>False</code> in the service configuration file. (<a href="https://github.com/packit/packit-service/pull/3100" target="_blank" rel="noopener noreferrer">packit-service#3100</a>)</li><li>We have fixed a bug that would lead to Testing Farm jobs being cancelled when there were no associated Copr builds. (<a href="https://github.com/packit/packit-service/pull/3102" target="_blank" rel="noopener noreferrer">packit-service#3102</a>)</li></ul>]]></content>
+        <author>
+            <name>Alžběta Kučerová</name>
+            <email>akucerov@redhat.com</email>
+            <uri>https://github.com/betulependule</uri>
+        </author>
+        <category label="2026-April" term="2026-April"/>
+        <category label="2026" term="2026"/>
+        <category label="April" term="April"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 14 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-14</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-14"/>
+        <updated>2026-04-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 14 (April 1st – April 7th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-14-april-1st--april-7th">Week 14 (April 1st – April 7th)<a href="#week-14-april-1st--april-7th" class="hash-link" aria-label="Direct link to Week 14 (April 1st – April 7th)" title="Direct link to Week 14 (April 1st – April 7th)">​</a></h2><ul><li>Packit now cancels running jobs even after manual retriggering. (<a href="https://github.com/packit/packit-service/pull/3076" target="_blank" rel="noopener noreferrer">packit-service#3076</a>)</li><li>You can now configure multiple <code>pull-from-upstream</code> jobs with different version/tag filters. In conjunction with the <code>Monitoring all</code> release monitoring option this allows you to consume multiple release streams and freely configure Fedora releases you want to target with each. (<a href="https://github.com/packit/packit-service/pull/3083" target="_blank" rel="noopener noreferrer">packit-service#3083</a>)</li><li>We have increased the retries for transient errors during Bodhi updates submission. (<a href="https://github.com/packit/packit-service/pull/3090" target="_blank" rel="noopener noreferrer">packit-service#3090</a>)</li></ul>]]></content>
+        <author>
+            <name>Laura Barcziová</name>
+            <email>lbarczio@redhat.com</email>
+            <uri>https://github.com/lbarcziova</uri>
+        </author>
+        <category label="2026-April" term="2026-April"/>
+        <category label="2026" term="2026"/>
+        <category label="April" term="April"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 13 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-13</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-13"/>
+        <updated>2026-03-30T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 13 (March 24th – March 30th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-13-march-24th--march-30th">Week 13 (March 24th – March 30th)<a href="#week-13-march-24th--march-30th" class="hash-link" aria-label="Direct link to Week 13 (March 24th – March 30th)" title="Direct link to Week 13 (March 24th – March 30th)">​</a></h2><ul><li>Over the past couple of weeks, we've been working to resolve a potential arbitrary code execution vulnerability related to how Packit processes spec file macros.</li></ul>]]></content>
+        <author>
+            <name>Maja Massarini</name>
+            <email>mmassari@redhat.com</email>
+            <uri>https://github.com/majamassarini</uri>
+        </author>
+        <category label="2026-March" term="2026-March"/>
+        <category label="2026" term="2026"/>
+        <category label="March" term="March"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 12 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-12</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-12"/>
+        <updated>2026-03-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 12 (March 17th – March 23rd)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-12-march-17th--march-23rd">Week 12 (March 17th – March 23rd)<a href="#week-12-march-17th--march-23rd" class="hash-link" aria-label="Direct link to Week 12 (March 17th – March 23rd)" title="Direct link to Week 12 (March 17th – March 23rd)">​</a></h2><ul><li>Users now can opt out specific packages from ELN builds and tests in Fedora CI (<a href="https://github.com/packit/packit-service/pull/3021" target="_blank" rel="noopener noreferrer">packit-service#3021</a>)</li></ul>]]></content>
+        <author>
+            <name>Marek Blaha</name>
+            <email>mblaha@redhat.com</email>
+            <uri>https://github.com/m-blaha</uri>
+        </author>
+        <category label="2026-March" term="2026-March"/>
+        <category label="2026" term="2026"/>
+        <category label="March" term="March"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 11 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-11</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-11"/>
+        <updated>2026-03-17T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 11 (March 11th – March 17th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-11-march-11th--march-17th">Week 11 (March 11th – March 17th)<a href="#week-11-march-11th--march-17th" class="hash-link" aria-label="Direct link to Week 11 (March 11th – March 17th)" title="Direct link to Week 11 (March 11th – March 17th)">​</a></h2><ul><li>Packit now supports <code>help</code> command in PR and issue comments.
+(<a href="https://github.com/packit/packit-service/pull/2853" target="_blank" rel="noopener noreferrer">packit-service#2853</a>)</li><li>Packit now responds to unrecognized commands in PR and issue comments.
+(<a href="https://github.com/packit/packit-service/pull/3057" target="_blank" rel="noopener noreferrer">packit-service#3057</a>)</li><li>In Fedora CI, it is now possible to retrigger builds and tests in <code>rawhide</code> PRs
+of ELN packages without dedicated <code>eln</code> branch independently.
+(<a href="https://github.com/packit/packit-service/pull/3032" target="_blank" rel="noopener noreferrer">packit-service#3032</a>)</li><li>We have fixed a couple of bugs that prevented sidetag Bodhi updates to be created
+when there was no stable build for the particular (freshly branched) target.
+(<a href="https://github.com/packit/packit-service/pull/3059" target="_blank" rel="noopener noreferrer">packit-service#3059</a>,
+<a href="https://github.com/packit/packit/pull/2704" target="_blank" rel="noopener noreferrer">packit#2704</a>)</li><li>Users can now specify a version string when retriggering <code>pull-from-upstream</code> via dist-git PR comment.
+(<a href="https://github.com/packit/packit-service/pull/3058" target="_blank" rel="noopener noreferrer">packit-service#3058</a>)</li></ul>]]></content>
+        <author>
+            <name>Nikola Forró</name>
+            <email>nforro@redhat.com</email>
+            <uri>https://github.com/nforro</uri>
+        </author>
+        <category label="2026-March" term="2026-March"/>
+        <category label="2026" term="2026"/>
+        <category label="March" term="March"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 10 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-10</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-10"/>
+        <updated>2026-03-11T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 10 (March 3rd – March 11th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-10-march-3rd--march-11th">Week 10 (March 3rd – March 11th)<a href="#week-10-march-3rd--march-11th" class="hash-link" aria-label="Direct link to Week 10 (March 3rd – March 11th)" title="Direct link to Week 10 (March 3rd – March 11th)">​</a></h2><ul><li>Packit now retries on build submission failure for Fedora CI Koji scratch builds.
+(<a href="https://github.com/packit/packit-service/pull/3040" target="_blank" rel="noopener noreferrer">packit-service#3040</a>)</li><li>We have introduced sanitization of spec files to harden our security practices.
+If this introduced a regression for you, please reach out to us.
+(<a href="https://github.com/packit/packit-service/pull/3047" target="_blank" rel="noopener noreferrer">packit-service#3047</a>,
+<a href="https://github.com/packit/packit/pull/2698" target="_blank" rel="noopener noreferrer">packit#2698</a>,
+<a href="https://github.com/packit/specfile/pull/519" target="_blank" rel="noopener noreferrer">specfile#519</a>)</li></ul>]]></content>
+        <author>
+            <name>Nikola Forró</name>
+            <email>nforro@redhat.com</email>
+            <uri>https://github.com/nforro</uri>
+        </author>
+        <category label="2026-March" term="2026-March"/>
+        <category label="2026" term="2026"/>
+        <category label="March" term="March"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 9 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-9</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-9"/>
+        <updated>2026-03-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 9 (February 24th – March 2nd)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-9-february-24th--march-2nd">Week 9 (February 24th – March 2nd)<a href="#week-9-february-24th--march-2nd" class="hash-link" aria-label="Direct link to Week 9 (February 24th – March 2nd)" title="Direct link to Week 9 (February 24th – March 2nd)">​</a></h2><ul><li>Packit now cancels obsoleted Koji builds before starting new ones. (<a href="https://github.com/packit/packit-service/pull/3000" target="_blank" rel="noopener noreferrer">packit-service#3000</a>)</li><li>Packit now runs tests also for <code>src.fedoraproject.org/tests/*</code> namespace. (<a href="https://github.com/packit/packit-service/pull/3022" target="_blank" rel="noopener noreferrer">packit-service#3022</a>)</li></ul>]]></content>
+        <author>
+            <name>Laura Barcziová</name>
+            <email>lbarczio@redhat.com</email>
+            <uri>https://github.com/lbarcziova</uri>
+        </author>
+        <category label="2026-February" term="2026-February"/>
+        <category label="2026" term="2026"/>
+        <category label="February" term="February"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 8 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-8</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-8"/>
+        <updated>2026-02-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 8 (February 17th – February 23rd)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-8-february-17th--february-23rd">Week 8 (February 17th – February 23rd)<a href="#week-8-february-17th--february-23rd" class="hash-link" aria-label="Direct link to Week 8 (February 17th – February 23rd)" title="Direct link to Week 8 (February 17th – February 23rd)">​</a></h2><ul><li>We are happy to announce that <a href="https://fedoraproject.org/wiki/Changes/PackitDistgitCI" target="_blank" rel="noopener noreferrer">Packit Fedora CI</a>, for all Fedora packages, has been live for a week now!
+You can find documentation at <a href="https://packit.dev/fedora-ci" target="_blank" rel="noopener noreferrer">https://packit.dev/fedora-ci</a>.</li></ul>]]></content>
+        <author>
+            <name>Maja Massarini</name>
+            <email>mmassari@redhat.com</email>
+            <uri>https://github.com/majamassarini</uri>
+        </author>
+        <category label="2026-February" term="2026-February"/>
+        <category label="2026" term="2026"/>
+        <category label="February" term="February"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 7 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-7</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-7"/>
+        <updated>2026-02-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 7 (February 10th – February 16th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-7-february-10th--february-16th">Week 7 (February 10th – February 16th)<a href="#week-7-february-10th--february-16th" class="hash-link" aria-label="Direct link to Week 7 (February 10th – February 16th)" title="Direct link to Week 7 (February 10th – February 16th)">​</a></h2><ul><li>We have fixed a race condition that occasionally prevented Copr builds from being reported as completed. (<a href="https://github.com/packit/packit-service/pull/2982" target="_blank" rel="noopener noreferrer">packit-service#2982</a>)</li></ul>]]></content>
+        <author>
+            <name>Marek Blaha</name>
+            <email>mblaha@redhat.com</email>
+            <uri>https://github.com/m-blaha</uri>
+        </author>
+        <category label="2026-February" term="2026-February"/>
+        <category label="2026" term="2026"/>
+        <category label="February" term="February"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 6 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-6</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-6"/>
+        <updated>2026-02-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 6 (February 3rd – February 9th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-6-february-3rd--february-9th">Week 6 (February 3rd – February 9th)<a href="#week-6-february-3rd--february-9th" class="hash-link" aria-label="Direct link to Week 6 (February 3rd – February 9th)" title="Direct link to Week 6 (February 3rd – February 9th)">​</a></h2><ul><li>We have fixed a race condition causing improper reporting of dist-git CI test statuses.
+(<a href="https://github.com/packit/packit-service/pull/2981" target="_blank" rel="noopener noreferrer">packit-service#2981</a>)</li><li>Packit now supports <code>bodhi_extra_params</code> configuration option to customize creating Bodhi updates.
+(<a href="https://github.com/packit/packit/pull/2682" target="_blank" rel="noopener noreferrer">packit#2682</a>)</li><li>Packit can now trigger Log Detective when it detects a failed downstream Koji task.
+(<a href="https://github.com/packit/packit-service/pull/2971" target="_blank" rel="noopener noreferrer">packit-service#2971</a>)</li></ul>]]></content>
+        <author>
+            <name>Nikola Forró</name>
+            <email>nforro@redhat.com</email>
+            <uri>https://github.com/nforro</uri>
+        </author>
+        <category label="2026-February" term="2026-February"/>
+        <category label="2026" term="2026"/>
+        <category label="February" term="February"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 5 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-5</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-5"/>
+        <updated>2026-02-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 5 (January 27th – February 2nd)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-5-january-27th--february-2nd">Week 5 (January 27th – February 2nd)<a href="#week-5-january-27th--february-2nd" class="hash-link" aria-label="Direct link to Week 5 (January 27th – February 2nd)" title="Direct link to Week 5 (January 27th – February 2nd)">​</a></h2><ul><li>The <code>version_suffix</code> configuration option is now supported in Packit. This option is meant for appending information to the Version field in RPM spec files. This is useful for post-release snapshots following RPM versioning conventions. The <code>version_suffix</code> behaves similarly to the already existing <code>release_suffix</code> and also supports expansion of environment variables. (<a href="https://github.com/packit/packit/pull/2664" target="_blank" rel="noopener noreferrer">packit#2664</a>)</li><li>When approaching the Github API rate limit threshold, Packit-service now moves tasks to the newly implemented rate-limited queue intended for awaiting the reset of the rate limit. This should lead to a better UX for repositories that have been experiencing issues related to rate limits. (<a href="https://github.com/packit/packit-service/pull/2941" target="_blank" rel="noopener noreferrer">packit-service#2941</a>)</li><li>Pull requests against the <code>main</code> branch are now supported in Fedora CI. (<a href="https://github.com/packit/packit-service/pull/2968" target="_blank" rel="noopener noreferrer">packit-service#2968</a>)</li><li>Ogr now supports Forgejo issues, comments and comment reactions. (<a href="https://github.com/packit/ogr/pull/959" target="_blank" rel="noopener noreferrer">ogr#959</a>)</li></ul>]]></content>
+        <author>
+            <name>Alžběta Kučerová</name>
+            <email>akucerov@redhat.com</email>
+            <uri>https://github.com/betulependule</uri>
+        </author>
+        <category label="2026-January" term="2026-January"/>
+        <category label="2026" term="2026"/>
+        <category label="January" term="January"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 4 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-4</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-4"/>
+        <updated>2026-01-26T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 4 (January 20th – January 26th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-4-january-20th--january-26th">Week 4 (January 20th – January 26th)<a href="#week-4-january-20th--january-26th" class="hash-link" aria-label="Direct link to Week 4 (January 20th – January 26th)" title="Direct link to Week 4 (January 20th – January 26th)">​</a></h2><ul><li>Testing jobs running against dist-git PRs now have the <code>dist-git-branch</code> context pointing to the target branch of the PR. (<a href="https://github.com/packit/packit-service/pull/2935" target="_blank" rel="noopener noreferrer">packit-service#2935</a>). On <code>epel10.y</code> dist-git PRs they now use the <code>CentOS Stream 10</code> Testing Farm compose, same as <code>epel10</code>. (<a href="https://github.com/packit/packit-service/pull/2953" target="_blank" rel="noopener noreferrer">packit-service#2953</a>)</li><li>Packit now supports the <code>--package</code> parameter, which can be used when retriggering jobs in monorepositories via comments. The parameter is intended to specify the package, for which to run specified jobs. (<a href="https://github.com/packit/packit-service/pull/2850" target="_blank" rel="noopener noreferrer">packit-service#2850</a>)</li></ul>]]></content>
+        <author>
+            <name>Laura Barcziová</name>
+            <email>lbarczio@redhat.com</email>
+            <uri>https://github.com/lbarcziova</uri>
+        </author>
+        <category label="2026-January" term="2026-January"/>
+        <category label="2026" term="2026"/>
+        <category label="January" term="January"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 3 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-3</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-3"/>
+        <updated>2026-01-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 3 (January 14th – January 20th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-3-january-14th--january-20th">Week 3 (January 14th – January 20th)<a href="#week-3-january-14th--january-20th" class="hash-link" aria-label="Direct link to Week 3 (January 14th – January 20th)" title="Direct link to Week 3 (January 14th – January 20th)">​</a></h2><ul><li>For Fedora CI, we are now providing direct links to Koji/Testing Farm instead of our dashboard, when possible. (<a href="https://github.com/packit/packit-service/pull/2943" target="_blank" rel="noopener noreferrer">packit-service#2943</a>)</li><li>Packit as Fedora CI now triggers ELN builds and test jobs on <code>rawhide</code> pull requests of onboarded ELN packages that don't have designated <code>eln</code> branch. (<a href="https://github.com/packit/packit-service/pull/2950" target="_blank" rel="noopener noreferrer">packit-service#2950</a>)</li><li>We have fixed a race condition that was preventing completed Testing Farm tests from being reported by the Packit service on the dashboard and in pull requests. (<a href="https://github.com/packit/packit-service/pull/2952" target="_blank" rel="noopener noreferrer">packit-service#2952</a>)</li></ul>]]></content>
+        <author>
+            <name>Maja Massarini</name>
+            <email>mmassari@redhat.com</email>
+            <uri>https://github.com/majamassarini</uri>
+        </author>
+        <category label="2026-January" term="2026-January"/>
+        <category label="2026" term="2026"/>
+        <category label="January" term="January"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 2 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-2</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-2"/>
+        <updated>2026-01-12T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 2 (January 6th – January 12th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-2-january-6th--january-12th">Week 2 (January 6th – January 12th)<a href="#week-2-january-6th--january-12th" class="hash-link" aria-label="Direct link to Week 2 (January 6th – January 12th)" title="Direct link to Week 2 (January 6th – January 12th)">​</a></h2><ul><li>Previously, statuses were updated after a related build status update, even for PR-triggered test jobs whose label requirements didn't match the PR. This has been changed to help avoid Github API rate limiting. (<a href="https://github.com/packit/packit-service/pull/2928" target="_blank" rel="noopener noreferrer">packit-service#2928</a>)</li></ul>]]></content>
+        <author>
+            <name>Marek Blaha</name>
+            <email>mblaha@redhat.com</email>
+            <uri>https://github.com/m-blaha</uri>
+        </author>
+        <category label="2026-January" term="2026-January"/>
+        <category label="2026" term="2026"/>
+        <category label="January" term="January"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 1 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2026/week-1</id>
+        <link href="https://packit.dev/posts/weekly/2026/week-1"/>
+        <updated>2026-01-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 1 (January 1st – January 5th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-1-january-1st--january-5th">Week 1 (January 1st – January 5th)<a href="#week-1-january-1st--january-5th" class="hash-link" aria-label="Direct link to Week 1 (January 1st – January 5th)" title="Direct link to Week 1 (January 1st – January 5th)">​</a></h2><ul><li>For retriggering tests with builds from another pull request, Packit now supports
+Github's automatically converted URL format (<code>https://github.com/namespace/repo/pull/&lt;pr_id&gt;</code>,
+e.g. <code>/packit test https://github.com/namespace/repo/pull/&lt;pr_id&gt;</code>)
+(<a href="https://github.com/packit/packit-service/pull/2923" target="_blank" rel="noopener noreferrer">packit-service#2923</a>)</li></ul>]]></content>
+        <author>
+            <name>Nikola Forró</name>
+            <email>nforro@redhat.com</email>
+            <uri>https://github.com/nforro</uri>
+        </author>
+        <category label="2026-January" term="2026-January"/>
+        <category label="2026" term="2026"/>
+        <category label="January" term="January"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 50 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2025/week-50</id>
+        <link href="https://packit.dev/posts/weekly/2025/week-50"/>
+        <updated>2025-12-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 50 (December 10th – December 16th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-50-december-10th--december-16th">Week 50 (December 10th – December 16th)<a href="#week-50-december-10th--december-16th" class="hash-link" aria-label="Direct link to Week 50 (December 10th – December 16th)" title="Direct link to Week 50 (December 10th – December 16th)">​</a></h2><ul><li>As the next step in Packit integration with Log Detective, Packit Service is now able to handle fedmsg messages from Log Detective (<code>logdetective.analysis</code> topic) containing state of analysis of failed build logs. (<a href="https://github.com/packit/packit-service/pull/2900" target="_blank" rel="noopener noreferrer">packit-service#2900</a>)</li></ul>]]></content>
+        <author>
+            <name>Maja Massarini</name>
+            <email>mmassari@redhat.com</email>
+            <uri>https://github.com/majamassarini</uri>
+        </author>
+        <category label="2025-December" term="2025-December"/>
+        <category label="2025" term="2025"/>
+        <category label="December" term="December"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 49 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2025/week-49</id>
+        <link href="https://packit.dev/posts/weekly/2025/week-49"/>
+        <updated>2025-12-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 49 (December 2nd – December 9th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-49-december-2nd--december-9th">Week 49 (December 2nd – December 9th)<a href="#week-49-december-2nd--december-9th" class="hash-link" aria-label="Direct link to Week 49 (December 2nd – December 9th)" title="Direct link to Week 49 (December 2nd – December 9th)">​</a></h2><ul><li><code>packit init</code> now automatically retrieves the latest version of the pre-commit hook to be added to the user's pre-commit configuration file. (<a href="https://github.com/packit/packit/pull/2651" target="_blank" rel="noopener noreferrer">packit#2651</a>)</li><li>Fixed a bug that could prevent downstream jobs from being triggered in case dist-git spec file depends on other files and is not parseable on its own. (<a href="https://github.com/packit/packit-service/pull/2901" target="_blank" rel="noopener noreferrer">packit-service#2901</a>)</li></ul>]]></content>
+        <author>
+            <name>Marek Blaha</name>
+            <email>mblaha@redhat.com</email>
+            <uri>https://github.com/m-blaha</uri>
+        </author>
+        <category label="2025-December" term="2025-December"/>
+        <category label="2025" term="2025"/>
+        <category label="December" term="December"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 48 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2025/week-48</id>
+        <link href="https://packit.dev/posts/weekly/2025/week-48"/>
+        <updated>2025-12-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 48 (November 25th – December 1st)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-48-november-25th--december-1st">Week 48 (November 25th – December 1st)<a href="#week-48-november-25th--december-1st" class="hash-link" aria-label="Direct link to Week 48 (November 25th – December 1st)" title="Direct link to Week 48 (November 25th – December 1st)">​</a></h2><ul><li>There were no user-facing changes in packit(-service) this week</li><li>The team is back in full strength and we plan to gradually address any technical debt</li><li>The work on Log Detective integration to Packit has started</li></ul>]]></content>
+        <author>
+            <name>Nikola Forró</name>
+            <email>nforro@redhat.com</email>
+            <uri>https://github.com/nforro</uri>
+        </author>
+        <category label="2025-November" term="2025-November"/>
+        <category label="2025" term="2025"/>
+        <category label="November" term="November"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 46 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2025/week-46</id>
+        <link href="https://packit.dev/posts/weekly/2025/week-46"/>
+        <updated>2025-11-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 46 (November 12th – November 18th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-46-november-12th--november-18th">Week 46 (November 12th – November 18th)<a href="#week-46-november-12th--november-18th" class="hash-link" aria-label="Direct link to Week 46 (November 12th – November 18th)" title="Direct link to Week 46 (November 12th – November 18th)">​</a></h2><ul><li>rpmlint test is now being run by default as part of Packit as Fedora CI. (<a href="https://github.com/packit/packit-service/pull/2856" target="_blank" rel="noopener noreferrer">packit-service#2856</a>)</li></ul>]]></content>
+        <author>
+            <name>Maja Massarini</name>
+            <email>mmassari@redhat.com</email>
+            <uri>https://github.com/majamassarini</uri>
+        </author>
+        <category label="2025-November" term="2025-November"/>
+        <category label="2025" term="2025"/>
+        <category label="November" term="November"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 43 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2025/week-43</id>
+        <link href="https://packit.dev/posts/weekly/2025/week-43"/>
+        <updated>2025-10-29T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 43 (October 22nd – October 29st)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-43-october-22nd--october-29st">Week 43 (October 22nd – October 29st)<a href="#week-43-october-22nd--october-29st" class="hash-link" aria-label="Direct link to Week 43 (October 22nd – October 29st)" title="Direct link to Week 43 (October 22nd – October 29st)">​</a></h2><ul><li>Resolve an issue with <code>pyforgejo</code> import that was introduced with a new upstream release. (<a href="https://github.com/packit/ogr/pull/949" target="_blank" rel="noopener noreferrer">packit/ogr#949</a>)</li><li>The Copr build ID is now exposed as <code>PACKIT_COPR_BUILD_ID</code> in the Testing Farm tests. (<a href="https://github.com/packit/packit-service/pull/2857" target="_blank" rel="noopener noreferrer">packit/packit-service#2857</a>)</li></ul>]]></content>
+        <author>
+            <name>Tomáš Tomeček</name>
+            <email>ttomecek@redhat.com</email>
+            <uri>https://github.com/TomasTomecek</uri>
+        </author>
+        <category label="2025-October" term="2025-October"/>
+        <category label="2025" term="2025"/>
+        <category label="October" term="October"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 42 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2025/week-42</id>
+        <link href="https://packit.dev/posts/weekly/2025/week-42"/>
+        <updated>2025-10-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 42 (October 15th – October 21st)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-42-october-15th--october-21st">Week 42 (October 15th – October 21st)<a href="#week-42-october-15th--october-21st" class="hash-link" aria-label="Direct link to Week 42 (October 15th – October 21st)" title="Direct link to Week 42 (October 15th – October 21st)">​</a></h2><ul><li>Packit as Fedora CI now runs rpminspect tests by default.
+(<a href="https://github.com/packit/packit-service/pull/2845" target="_blank" rel="noopener noreferrer">packit/packit-service#2845</a>)</li></ul>]]></content>
+        <author>
+            <name>Nikola Forró</name>
+            <email>nforro@redhat.com</email>
+            <uri>https://github.com/nforro</uri>
+        </author>
+        <category label="2025-October" term="2025-October"/>
+        <category label="2025" term="2025"/>
+        <category label="October" term="October"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 35 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2025/week-35</id>
+        <link href="https://packit.dev/posts/weekly/2025/week-35"/>
+        <updated>2025-09-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 35 (August 26th – September 1st)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-35-august-26th--september-1st">Week 35 (August 26th – September 1st)<a href="#week-35-august-26th--september-1st" class="hash-link" aria-label="Direct link to Week 35 (August 26th – September 1st)" title="Direct link to Week 35 (August 26th – September 1st)">​</a></h2><ul><li>We have fixed a bug that caused issues when triggering tests for Fedora ELN. (<a href="https://github.com/packit/packit-service/pull/2844" target="_blank" rel="noopener noreferrer">packit/packit-service#2844</a>)</li></ul>]]></content>
+        <author>
+            <name>Matej Focko</name>
+            <email>mfocko@redhat.com</email>
+            <uri>https://github.com/mfocko</uri>
+        </author>
+        <category label="2025-August" term="2025-August"/>
+        <category label="2025" term="2025"/>
+        <category label="August" term="August"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 34 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2025/week-34</id>
+        <link href="https://packit.dev/posts/weekly/2025/week-34"/>
+        <updated>2025-08-25T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 34 (August 19th – August 25th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-34-august-19th--august-25th">Week 34 (August 19th – August 25th)<a href="#week-34-august-19th--august-25th" class="hash-link" aria-label="Direct link to Week 34 (August 19th – August 25th)" title="Direct link to Week 34 (August 19th – August 25th)">​</a></h2><ul><li>Packit now automatically invokes an RPM build in <code>mock</code> when no RPMs are provided when running <code>packit test</code> in the CLI. (<a href="https://github.com/packit/packit/pull/2636" target="_blank" rel="noopener noreferrer">packit#2636</a>)</li></ul>]]></content>
+        <author>
+            <name>Alžběta Kučerová</name>
+            <email>akucerov@redhat.com</email>
+            <uri>https://github.com/betulependule</uri>
+        </author>
+        <category label="2025-August" term="2025-August"/>
+        <category label="2025" term="2025"/>
+        <category label="August" term="August"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 33 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2025/week-33</id>
+        <link href="https://packit.dev/posts/weekly/2025/week-33"/>
+        <updated>2025-08-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 33 (August 12th – August 18th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-33-august-12th--august-18th">Week 33 (August 12th – August 18th)<a href="#week-33-august-12th--august-18th" class="hash-link" aria-label="Direct link to Week 33 (August 12th – August 18th)" title="Direct link to Week 33 (August 12th – August 18th)">​</a></h2><ul><li>In test jobs, it is now explicitly required to include the targets needed for running build jobs;
+they will no longer be automatically deduced to prevent inconsistencies in creating build and test jobs.
+(<a href="https://github.com/packit/packit-service/pull/2785" target="_blank" rel="noopener noreferrer">packit-service#2785</a>)</li></ul>]]></content>
+        <author>
+            <name>Nikola Forró</name>
+            <email>nforro@redhat.com</email>
+            <uri>https://github.com/nforro</uri>
+        </author>
+        <category label="2025-August" term="2025-August"/>
+        <category label="2025" term="2025"/>
+        <category label="August" term="August"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 25 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2025/week-25</id>
+        <link href="https://packit.dev/posts/weekly/2025/week-25"/>
+        <updated>2025-06-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 25 (June 17th – June 23rd)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-25-june-17th--june-23rd">Week 25 (June 17th – June 23rd)<a href="#week-25-june-17th--june-23rd" class="hash-link" aria-label="Direct link to Week 25 (June 17th – June 23rd)" title="Direct link to Week 25 (June 17th – June 23rd)">​</a></h2><ul><li>We have added support for the <code>eln</code> dist-git branch and the <code>Fedora-eln</code> Testing Farm compose in Packit as Fedora CI.
+(<a href="https://github.com/packit/packit/pull/2630" target="_blank" rel="noopener noreferrer">packit#2630</a>)</li></ul>]]></content>
+        <author>
+            <name>Nikola Forró</name>
+            <email>nforro@redhat.com</email>
+            <uri>https://github.com/nforro</uri>
+        </author>
+        <category label="2025-June" term="2025-June"/>
+        <category label="2025" term="2025"/>
+        <category label="June" term="June"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 23 and 24 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2025/week-23-24</id>
+        <link href="https://packit.dev/posts/weekly/2025/week-23-24"/>
+        <updated>2025-06-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 23-24 (June 3rd – June 16th)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-23-24-june-3rd--june-16th">Week 23-24 (June 3rd – June 16th)<a href="#week-23-24-june-3rd--june-16th" class="hash-link" aria-label="Direct link to Week 23-24 (June 3rd – June 16th)" title="Direct link to Week 23-24 (June 3rd – June 16th)">​</a></h2><ul><li>Team was attending and presenting at <a href="https://fedoraproject.org/flock/2025/" target="_blank" rel="noopener noreferrer">Flock to Fedora</a> and
+<a href="https://www.devconf.info/cz/" target="_blank" rel="noopener noreferrer">Devconf.cz</a> conferences. The highlight for us was connecting with so many Packit users in person!
+We want to thank everyone who attended our sessions and shared their feedback. If you are curious, here is the list of sessions we held:<ul><li><a href="https://cfp.fedoraproject.org/flock-to-fedora-2025/talk/VZETQA/" target="_blank" rel="noopener noreferrer">Even more release automation talk</a></li><li><a href="https://cfp.fedoraproject.org/flock-to-fedora-2025/talk/TNVBXQ/" target="_blank" rel="noopener noreferrer">What about a better dist-git CI?</a></li><li><a href="https://cfp.fedoraproject.org/flock-to-fedora-2025/talk/CLDGTL/" target="_blank" rel="noopener noreferrer">specfile library + norpm</a></li><li><a href="https://cfp.fedoraproject.org/flock-to-fedora-2025/talk/JBYMTX/" target="_blank" rel="noopener noreferrer">Smarter package maintenance with Packit (workshop)</a></li><li><a href="https://pretalx.devconf.info/devconf-cz-2025/talk/TLPB3M/" target="_blank" rel="noopener noreferrer">Kanban, our way</a></li><li><a href="https://pretalx.devconf.info/devconf-cz-2025/talk/UTGBCF/" target="_blank" rel="noopener noreferrer">Breaking Changes Without Breaking Users: Lessons from Packit 1.0</a></li><li><a href="https://pretalx.devconf.info/devconf-cz-2025/talk/7DESJP/" target="_blank" rel="noopener noreferrer">Breaking Barriers: Cross-Distro CI/CD with Packit and OBS</a></li></ul></li><li>Packit now exposes <code>specfile_path</code> from configuration (or its default value) as the environment variable <code>PACKIT_SPECFILE_PATH</code> for all Packit actions. (<a href="https://github.com/packit/packit/pull/2589" target="_blank" rel="noopener noreferrer"><code>packit#2589</code></a>)</li></ul>]]></content>
+        <author>
+            <name>Laura Barcziová</name>
+            <email>lbarczio@redhat.com</email>
+            <uri>https://github.com/lbarcziova</uri>
+        </author>
+        <category label="2025-June" term="2025-June"/>
+        <category label="2025" term="2025"/>
+        <category label="June" term="June"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Week 22 in Packit]]></title>
+        <id>https://packit.dev/posts/weekly/2025/week-22</id>
+        <link href="https://packit.dev/posts/weekly/2025/week-22"/>
+        <updated>2025-06-02T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Week 22 (May 26th – June 1st)]]></summary>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-22-may-26th--june-1st">Week 22 (May 26th – June 1st)<a href="#week-22-may-26th--june-1st" class="hash-link" aria-label="Direct link to Week 22 (May 26th – June 1st)" title="Direct link to Week 22 (May 26th – June 1st)">​</a></h2><ul><li><p>We have added a new <code>run-condition</code> action that can be used to conditionally
+disable downstream jobs during the execution and aims to solve the following
+<a href="https://github.com/packit/packit-service/issues/2777" target="_blank" rel="noopener noreferrer">issue</a>. (<a href="https://github.com/packit/packit/pull/2608" target="_blank" rel="noopener noreferrer"><code>packit#2608</code></a>, <a href="https://github.com/packit/packit-service/pull/2810" target="_blank" rel="noopener noreferrer"><code>packit-service#2810</code></a>)</p></li><li><p>We got a contribution for a typo in the error message when our Packit CLI
+tracebacks. Thanks a lot for the contribution, @mulkieran. (<a href="https://github.com/packit/packit/pull/2612" target="_blank" rel="noopener noreferrer"><code>packit#2612</code></a>)</p></li><li><p>We have fixed a bug in validation of the job trigger. (<a href="https://github.com/packit/packit/pull/2616" target="_blank" rel="noopener noreferrer"><code>packit#2616</code></a>)</p></li><li><p>We have added support for handling of minor EPEL releases for Copr builds. (<a href="https://github.com/packit/packit/pull/2619" target="_blank" rel="noopener noreferrer"><code>packit#2619</code></a>)</p></li></ul>]]></content>
+        <author>
+            <name>Matej Focko</name>
+            <email>mfocko@redhat.com</email>
+            <uri>https://github.com/mfocko</uri>
+        </author>
+        <category label="2025-May" term="2025-May"/>
+        <category label="2025" term="2025"/>
+        <category label="May" term="May"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Week 21 in Packit]]></title>
         <id>https://packit.dev/posts/weekly/2025/week-21</id>
