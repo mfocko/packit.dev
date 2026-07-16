@@ -4,10 +4,70 @@
         <title>Packit Weekly</title>
         <link>https://packit.dev/posts/weekly</link>
         <description>Weekly updates by Packit</description>
-        <lastBuildDate>Tue, 05 May 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 13 Jul 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[Week 28 in Packit]]></title>
+            <link>https://packit.dev/posts/weekly/2026/week-28</link>
+            <guid>https://packit.dev/posts/weekly/2026/week-28</guid>
+            <pubDate>Mon, 13 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Week 28 (July 7th – July 13th)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-28-july-7th--july-13th">Week 28 (July 7th – July 13th)<a href="#week-28-july-7th--july-13th" class="hash-link" aria-label="Direct link to Week 28 (July 7th – July 13th)" title="Direct link to Week 28 (July 7th – July 13th)">​</a></h2><ul><li>Log Detective results in Packit dashboard now show error messages for failed analyses,
+link to related Koji scratch builds and display suggested solutions when available.
+(<a href="https://github.com/packit/packit-service/pull/3151" target="_blank" rel="noopener noreferrer">packit-service#3151</a>,
+<a href="https://github.com/packit/dashboard/pull/537" target="_blank" rel="noopener noreferrer">dashboard#537</a>,
+<a href="https://github.com/packit/dashboard/pull/538" target="_blank" rel="noopener noreferrer">dashboard#538</a>,
+<a href="https://github.com/packit/dashboard/pull/539" target="_blank" rel="noopener noreferrer">dashboard#539</a>)</li></ul>]]></content:encoded>
+            <author>nforro@redhat.com (Nikola Forró)</author>
+            <category>2026-July</category>
+            <category>2026</category>
+            <category>July</category>
+        </item>
+        <item>
+            <title><![CDATA[Week 27 in Packit]]></title>
+            <link>https://packit.dev/posts/weekly/2026/week-27</link>
+            <guid>https://packit.dev/posts/weekly/2026/week-27</guid>
+            <pubDate>Tue, 07 Jul 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Week 27 (July 1st – July 7th)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-27-july-1st--july-7th">Week 27 (July 1st – July 7th)<a href="#week-27-july-1st--july-7th" class="hash-link" aria-label="Direct link to Week 27 (July 1st – July 7th)" title="Direct link to Week 27 (July 1st – July 7th)">​</a></h2><ul><li>When a package is configured to consume mutiple release streams and release-monitoring.org detects
+multiple releases at the same time, if a pull-from-upstream job run for one released version fails,
+only that one is retried and the rest are unaffected and properly processed. Before this fix
+it could happen that a failed job run for one released version could prevent other released versions
+from being processed at all.
+(<a href="https://github.com/packit/packit-service/pull/3147" target="_blank" rel="noopener noreferrer">packit-service#3147</a>)</li></ul>]]></content:encoded>
+            <author>nforro@redhat.com (Nikola Forró)</author>
+            <category>2026-July</category>
+            <category>2026</category>
+            <category>July</category>
+        </item>
+        <item>
+            <title><![CDATA[Week 22 in Packit]]></title>
+            <link>https://packit.dev/posts/weekly/2026/week-22</link>
+            <guid>https://packit.dev/posts/weekly/2026/week-22</guid>
+            <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Week 22 (May 28th – June 3rd)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-22-may-28th--june-3rd">Week 22 (May 28th – June 3rd)<a href="#week-22-may-28th--june-3rd" class="hash-link" aria-label="Direct link to Week 22 (May 28th – June 3rd)" title="Direct link to Week 22 (May 28th – June 3rd)">​</a></h2><ul><li>Packit now supports wildcards in Copr allowlists.
+Thanks <a href="https://github.com/evgeni" target="_blank" rel="noopener noreferrer">@evgeni</a>.
+(<a href="https://github.com/packit/packit-service/pull/2907" target="_blank" rel="noopener noreferrer">packit-service#2907</a>)</li></ul>]]></content:encoded>
+            <author>nforro@redhat.com (Nikola Forró)</author>
+            <category>2026-May</category>
+            <category>2026</category>
+            <category>May</category>
+        </item>
+        <item>
+            <title><![CDATA[Week 20 in Packit]]></title>
+            <link>https://packit.dev/posts/weekly/2026/week-20</link>
+            <guid>https://packit.dev/posts/weekly/2026/week-20</guid>
+            <pubDate>Mon, 18 May 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Week 20 (May 12th – May 18th)]]></description>
+            <content:encoded><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="week-20-may-12th--may-18th">Week 20 (May 12th – May 18th)<a href="#week-20-may-12th--may-18th" class="hash-link" aria-label="Direct link to Week 20 (May 12th – May 18th)" title="Direct link to Week 20 (May 12th – May 18th)">​</a></h2><ul><li>Packit Fedora-CI now runs <code>rmdepcheck</code> and <code>license-validate</code> tests on PRs. (<a href="https://github.com/packit/packit-service/pull/3089" target="_blank" rel="noopener noreferrer">packit-service#3089</a>)</li><li>Starting this week, Packit will provide analysis of failed Koji scratch builds on dist-git pull requests thanks to Log Detective. For more info, look at the <a href="https://fedoramagazine.org/log-detective-in-packit/" target="_blank" rel="noopener noreferrer">Fedora Megazine Article</a>.</li></ul>]]></content:encoded>
+            <author>mmassari@redhat.com (Maja Massarini)</author>
+            <category>2026-May</category>
+            <category>2026</category>
+            <category>May</category>
+        </item>
         <item>
             <title><![CDATA[Week 18 in Packit]]></title>
             <link>https://packit.dev/posts/weekly/2026/week-18</link>
